@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>솔솔방충망</title>
+  <meta name="description" content="미세촘촘망, 블랙 스테인리스망, 안전망 전문 시공. 전문 기술자의 정밀한 시공으로 맑은 시야와 쾌적함을 완성하세요."/>
+  <!-- Google Fonts + Material Symbols -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <!-- Tailwind CSS (Play CDN) + 공통 설정 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="tailwind-config.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f7fafc; }
+    ::-webkit-scrollbar-thumb { background: #c4c6cf; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #74777f; }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased w-full overflow-x-hidden">
+
+<!-- Top Navigation -->
+<header class="bg-surface/95 w-full top-0 sticky z-50 border-b border-outline-variant backdrop-blur-sm">
+  <!-- 모바일 헤더 (원본 모바일 홈 디자인) -->
+  <div class="flex md:hidden justify-between items-center px-margin-mobile h-16 bg-surface-container-lowest">
+    <button aria-label="메뉴 열기" class="text-primary p-2 -ml-2 rounded-full hover:bg-surface-variant transition-colors duration-200 focus:outline-none" id="menuBtnMobile">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <div class="font-headline-md text-headline-md font-bold text-primary">솔솔방충망</div>
+    <a class="text-primary font-label-md text-label-md p-2 -mr-2 rounded-full hover:bg-surface-variant transition-colors duration-200" href="tel:010-1234-5678">전화 상담</a>
+  </div>
+  <!-- 데스크톱 헤더 -->
+  <div class="hidden md:flex justify-between items-center px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto h-20">
+    <!-- Logo -->
+    <a class="flex items-center gap-3" href="index.html">
+      <img alt="솔솔방충망 로고" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAeCqrIPDfKOdneFX7gF4nKyLTSpLag-gosxFohE50QB-C-fu8O9pSdXCPQcGJMWszs01fPf7XwrEqxBPbDPXJUDJ-GmwKEE4_rhUwKcvBM20ZCqRHdUAljqC5X37iPrCrspXS3O-3O0TKg5A3sf-AzLfNIO0pG4UpgY_Rg0hdnV4CluVuJDrk7zBsKhQflSknZkVkYKjgJzINABvFE9TonwiCWEKRwKRiRf926QMtrJnp1XlPdxHo9t6--HmS_7KPbQI64aji3rDA"/>
+      <span class="font-headline-md text-headline-md font-bold text-primary hidden md:inline-block">솔솔방충망</span>
+    </a>
+    <!-- Desktop Nav Links -->
+    <nav class="hidden md:flex gap-6 items-center">
+      <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="index.html">홈</a>
+      <a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors font-label-md text-label-md px-3 py-2 rounded-lg" href="services.html">서비스 안내</a>
+      <a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors font-label-md text-label-md px-3 py-2 rounded-lg" href="gallery.html">시공 사례</a>
+      <a class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors font-label-md text-label-md px-3 py-2 rounded-lg" href="contact.html">문의하기</a>
+    </nav>
+    <!-- Actions -->
+    <div class="flex items-center gap-3">
+      <a class="hidden md:block bg-transparent text-primary border border-primary px-4 py-2 rounded-lg font-label-md text-label-md hover:bg-surface-container-low transition-colors" href="contact.html">무료 견적 신청</a>
+      <a class="bg-[#ea580c] text-white px-4 py-2 rounded-lg font-label-md text-label-md hover:bg-[#c2410c] transition-colors flex items-center gap-2" href="tel:010-1234-5678">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+        전화 상담하기
+      </a>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <nav class="hidden md:hidden border-t border-outline-variant bg-surface px-margin-mobile py-3" id="mobileMenu">
+    <a class="block py-3 text-primary font-bold font-label-md text-label-md" href="index.html">홈</a>
+    <a class="block py-3 text-on-surface-variant font-label-md text-label-md" href="services.html">서비스 안내</a>
+    <a class="block py-3 text-on-surface-variant font-label-md text-label-md" href="gallery.html">시공 사례</a>
+    <a class="block py-3 text-on-surface-variant font-label-md text-label-md" href="contact.html">문의하기</a>
+  </nav>
+</header>
+
+<main class="w-full">
+  <!-- Hero Section (모바일 — 원본 모바일 홈 디자인) -->
+  <section class="relative w-full min-h-[500px] flex md:hidden items-end pb-12 px-margin-mobile">
+    <div class="absolute inset-0 w-full h-full z-0">
+      <div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNGY_ZpmsO9xllbti_AafDg3tFOdLHXlDIOZ6tfH3PjsAO_1TUH47banbNMZR-BdMEofkg14YuVt2A0rs5qcO2eja6hL5qUuk2agVzKK38g55jJgcYRiah4djLsGeCvJ8yZNOXe8dVCIDiAWVS5RH6CLQ4LWrQwYXjs5cfko1YN4WbVQgni5mQ_S2YadHKfZOCRX3gKMAHOrd60VQWK7_rnFVGbSs4lUq-aUCHcDHuscOxvYB4k2p_CcJ-2z3qvaD5UGDnxMPrq_9S')"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 w-full flex flex-col gap-6">
+      <h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-primary">
+        우리 집의 맑은 시야와 쾌적함, 전문 방충망 시공으로 완성하세요
+      </h1>
+      <a class="w-full py-4 bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md rounded-lg shadow-sm active:scale-[0.98] transition-transform flex items-center justify-center gap-2" href="contact.html">
+        무료 상담 신청
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+  <!-- Hero Section (데스크톱) -->
+  <section class="relative w-full h-[600px] md:h-[800px] hidden md:flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0 bg-primary/40"></div>
+    <div class="absolute inset-0 z-[-1] bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGgYLuK7OrCCslaKTF3oqc20JjiuAvSu5ZFUf1G4AM_0LBk70p9VLvoVzuWgUMsWEKNdfYpS-gUUQmZHyKAArvVpgvAiqe2clgk-n6d6qedvWFwWpMopozgJcnHxp8xYUOPonAJbEhHl8s_Adwtxwc_L7qSDUFtwZj37m2zCjSR9vc8un_C2R7Gf43WdmbDcoz5flLh8K6-8ranhDt5ao4JP_vFb7ah612CGa-cD476_yEUPGmp_Oc-_FBlnLQ5dmlAYjU7jGnz0Bv')"></div>
+    <div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+      <div class="bg-surface/90 backdrop-blur-sm p-8 md:p-12 rounded-xl inline-block shadow-lg border border-outline-variant max-w-3xl">
+        <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4">우리 집의 맑은 시야와 쾌적함,<br/>전문 방충망 시공으로 완성하세요.</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl mx-auto">미세촘촘망부터 블랙 스테인리스망까지, 방충망의 모든 솔루션을 제안합니다.</p>
+        <a class="inline-block bg-[#ea580c] text-white px-8 py-4 rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-[#c2410c] transition-transform hover:scale-105 active:scale-95 shadow-md" href="contact.html">무료 상담 신청하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Highlights -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="services">
+    <div class="text-center mb-12">
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-4">맞춤형 프리미엄 방충망 솔루션</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant">고객님의 주거 환경에 딱 맞는 최고급 소재를 사용합니다.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+      <!-- Card 1 -->
+      <div class="bg-surface rounded-xl border border-outline-variant overflow-hidden group hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+        <div class="h-48 w-full overflow-hidden">
+          <img alt="미세촘촘망 클로즈업" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCO6QEoUBtY413i-k4KauhzGslO_jjycuLwHVqqn10x10VE0aJUCErYqGV7aMybWwIPcGR9930KzPk9_syBBA7q2x1LvU0Lnr_epW19kwzcAPM0vqZKcRIKuINiBf8czKYP6Ki6WCKjwVvC1WIVPNfIklDhX3Zu7_FvqdFUBzD4iOh9vSCFln6U3yjWG5AfrXnzKhxQJwl4zPUVNrK2XTpBPE6Zf4Zh-MmRu0a21C1UV6Y9IEfxMwj8_faHyAa2rYcwLPENjXUE75A"/>
+        </div>
+        <div class="p-6">
+          <h3 class="font-headline-md text-headline-md text-primary mb-2">미세촘촘망 (미세촘촘망)</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">초미세먼지와 작은 날벌레까지 완벽하게 차단하며, 우수한 통기성을 자랑합니다.</p>
+          <a class="text-secondary font-label-md text-label-md flex items-center gap-1 hover:text-on-secondary-fixed-variant transition-colors" href="services.html">
+            자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-surface rounded-xl border border-outline-variant overflow-hidden group hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+        <div class="h-48 w-full overflow-hidden">
+          <img alt="블랙 스테인리스망이 설치된 모던한 창" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiLOPHX5xRHHfdRwRJAZUXFUIpPIhmpQMWTdk-yNJLmMk4Q31HE__BX6b4TNmaPCPN6p8XLbLNaw-Nv30p0oPjN4WRoBXpGFRDISiXpionubrNEbDGdXFgt-2_rgRsXqbMRJtYEczIkN0g9PwPvOwR5S1JeW-TfLq1LlCPU_X7KuPur66ChHR2oKgsG0a8t4p146eZwgTGW38Tu7jBBQI0waRWcP3vxvHhzu0Pfb2vmAkajVsRFtRv2o-QDeKcxvcdnumYu3R4AilZ"/>
+        </div>
+        <div class="p-6">
+          <h3 class="font-headline-md text-headline-md text-primary mb-2">블랙 스테인리스망</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">녹슬지 않는 강력한 내구성과 외부 시선 차단 효과를 동시에 제공하는 프리미엄 망입니다.</p>
+          <a class="text-secondary font-label-md text-label-md flex items-center gap-1 hover:text-on-secondary-fixed-variant transition-colors" href="services.html">
+            자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-surface rounded-xl border border-outline-variant overflow-hidden group hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow">
+        <div class="h-48 w-full overflow-hidden">
+          <img alt="거실을 보호하는 고강도 안전망" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBwK8pafJhgm-y4BNOjMmwlOke26CqYJaeLUmTBTRAqEaKRRQZu8jxknoPususgswwLM7t0Fga-Be7-81eQmSXvr7G13758nJoaAEX6kbsCeegvVDSYpOtbJmUy-9n_hjZTDYzA5IW413RFJ3pGDEU3ocEVW6oSF6O1Y_TWo6PG4nF7lbs8VjxjCoOq_VNlx9jCrsaUeC58UheBwL5bt_DscUTg9MBMV-k3gZ3oDR_zLhVmAlyHGcP-eCDQslSxQvW36Y5lo4v1OPc"/>
+        </div>
+        <div class="p-6">
+          <h3 class="font-headline-md text-headline-md text-primary mb-2">안전망 (안전망)</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">어린이 추락 방지 및 외부 침입을 막아주는 고강도 안전 특화 방충망입니다.</p>
+          <a class="text-secondary font-label-md text-label-md flex items-center gap-1 hover:text-on-secondary-fixed-variant transition-colors" href="services.html">
+            자세히 보기 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before & After -->
+  <section class="py-section-gap relative overflow-hidden bg-surface-container-low">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-6">보이지 않는 차이, 확연한 결과</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">오래되고 부식된 방충망은 건강을 위협하고 시야를 가립니다. 전문가의 손길로 새 집 같은 상쾌함을 느껴보세요.</p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 bg-surface p-4 rounded-lg border border-outline-variant">
+              <span class="material-symbols-outlined text-[#ea580c] text-3xl">air</span>
+              <div>
+                <h4 class="font-label-md text-label-md text-primary font-bold">향상된 통기성</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant text-sm">바람은 잘 통하고 먼지는 차단합니다.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-surface p-4 rounded-lg border border-outline-variant">
+              <span class="material-symbols-outlined text-[#ea580c] text-3xl">visibility</span>
+              <div>
+                <h4 class="font-label-md text-label-md text-primary font-bold">압도적인 시인성</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant text-sm">마치 방충망이 없는 듯한 선명한 시야를 제공합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Split Image Comparison -->
+        <div class="relative h-[400px] w-full rounded-2xl overflow-hidden border-4 border-white shadow-xl">
+          <img alt="낡은 방충망과 새 방충망의 비교" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgks5Loy780QeUb8xxVjib2SiCmqyZNdckgri9HNkib8doqTyDlZc-fdv78K2Mh1_YvckvlAacLh2rIYtzhEYxgOHz462_FLKad-IsiT_zeTisfWhQ0dmioMP4-XKotXmwf543Icpg4nZ7Ga-Vzvx439Ln_BkYSjamuwSVEb4fTKOwlzBN5aaTPcX0RvnhEOQGtuATjLuWZ3uZlXgHM1jveL8bupujcAeIXweQ0IbK5fYVVXh6AtA6brDmWzvbfdsCS2dR0AlF1hQd"/>
+          <div class="absolute inset-y-0 left-1/2 w-1 bg-white flex items-center justify-center transform -translate-x-1/2">
+            <div class="w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border border-outline-variant">
+              <span class="material-symbols-outlined text-primary text-sm">compare_arrows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Factors (Bento Grid) -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-4">왜 솔솔방충망을 선택해야 할까요?</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[200px]">
+      <!-- Large Feature -->
+      <div class="md:col-span-2 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-end relative overflow-hidden group">
+        <div class="absolute top-8 right-8 z-10">
+          <span class="material-symbols-outlined text-5xl opacity-80" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+        </div>
+        <div class="relative z-10">
+          <h3 class="font-headline-md text-headline-md mb-2">전문 기술자</h3>
+          <p class="font-body-md text-body-md text-primary-fixed-dim max-w-md">수년간의 현장 경험을 갖춘 전문 시공팀이 하자 없는 완벽한 설치를 보장합니다. 정밀한 실측부터 깔끔한 마감까지 책임집니다.</p>
+        </div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary-container to-transparent opacity-50"></div>
+      </div>
+      <!-- Small Feature 1 -->
+      <div class="bg-surface-container-high rounded-xl p-6 flex flex-col justify-between border border-outline-variant">
+        <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+        <div>
+          <h3 class="font-headline-md text-headline-md text-primary mb-1 text-lg">믿을 수 있는 A/S</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant text-sm">시공 후에도 안심할 수 있는 확실한 사후 관리 서비스.</p>
+        </div>
+      </div>
+      <!-- Small Feature 2 -->
+      <div class="bg-surface-container-high rounded-xl p-6 flex flex-col justify-between border border-outline-variant">
+        <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">eco</span>
+        <div>
+          <h3 class="font-headline-md text-headline-md text-primary mb-1 text-lg">친환경 자재</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant text-sm">인체에 무해하고 친환경적인 인증 받은 자재만 사용합니다.</p>
+        </div>
+      </div>
+      <!-- Call to action block -->
+      <div class="md:col-span-2 bg-[#f2bc82] rounded-xl p-8 flex items-center justify-between border border-outline-variant">
+        <div>
+          <h3 class="font-headline-md text-headline-md text-tertiary mb-2">지금 바로 견적을 확인하세요</h3>
+          <p class="font-body-md text-body-md text-on-tertiary-fixed-variant">무료 방문 견적 및 친절한 상담이 준비되어 있습니다.</p>
+        </div>
+        <a class="bg-[#ea580c] text-white px-6 py-3 rounded-lg font-label-md text-label-md whitespace-nowrap hover:bg-[#c2410c] transition-colors shadow-md" href="contact.html">상담 예약하기</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary pt-section-gap pb-12">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-12">
+    <!-- Brand -->
+    <div>
+      <span class="text-headline-md font-headline-md font-bold text-on-primary block mb-4">솔솔방충망</span>
+      <p class="font-body-md text-body-md text-surface-variant text-sm">고객의 맑은 시야를 최우선으로 생각하는 방충망 시공 전문 기업.</p>
+    </div>
+    <!-- Links 1 -->
+    <div>
+      <h4 class="font-label-md text-label-md font-bold mb-4">법적 고지</h4>
+      <ul class="space-y-2">
+        <li><span class="font-body-md text-body-md text-surface-variant text-sm">사업자등록번호 123-45-67890</span></li>
+        <li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors text-sm" href="#">개인정보처리방침</a></li>
+        <li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors text-sm" href="#">이용약관</a></li>
+      </ul>
+    </div>
+    <!-- Links 2 -->
+    <div>
+      <h4 class="font-label-md text-label-md font-bold mb-4">소통하기</h4>
+      <ul class="space-y-2">
+        <li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors text-sm" href="#">블로그</a></li>
+        <li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors text-sm" href="#">유튜브</a></li>
+      </ul>
+    </div>
+    <!-- Contact small -->
+    <div>
+      <h4 class="font-label-md text-label-md font-bold mb-4">문의하기</h4>
+      <p class="font-body-md text-body-md text-surface-variant text-sm mb-2">T. 010-1234-5678</p>
+      <p class="font-body-md text-body-md text-surface-variant text-sm">E. hello@solsol.kr</p>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="border-t border-primary-container pt-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left">
+    <p class="font-caption text-caption text-surface-variant">© 2024 솔솔방충망. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating Action Button (FAB) -->
+<a aria-label="빠른 전화" class="fixed bottom-8 right-8 z-50 bg-[#ea580c] text-white p-4 rounded-full shadow-lg hover:bg-[#c2410c] hover:scale-105 transition-all flex items-center justify-center group" href="tel:010-1234-5678">
+  <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+  <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap pl-0 group-hover:pl-2 font-label-md text-label-md">빠른 전화</span>
+</a>
+
+<script>
+  document.getElementById('menuBtnMobile').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
